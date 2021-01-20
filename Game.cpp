@@ -48,7 +48,6 @@ void Game::attackPlayer() {
 }
 
 void Game::FightWithMonser() {
-	int chance_fail = 50 + (difficalt_lvl - 3) * 20; //1lvl = 10, 2lvl = 30 3lvl = 50 4lvl = 70 5lvl = 90
 	std::cout << "\nТы встретил " << ColorPrint(monster.getName() + "а", Colors::Monster) << ".\n";
 	while (!player.isDead() && !monster.isDead()) {
 		monsterFightInitMsg();
